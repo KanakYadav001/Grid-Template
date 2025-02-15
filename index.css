@@ -1,0 +1,140 @@
+html {
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.col1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.col1 .sec1 {
+  width: 100%;
+  font-size: 0.5em;
+  opacity: 70%;
+}
+.col1 .sec2 {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.col1 .sec2 img {
+  width: 20px;
+}
+.col1 .sec2 h2 {
+  font-size: 0.9em;
+  opacity: 60%;
+}
+.col1 .sec2 .butt {
+  border: none;
+  background-color: black;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.col2 {
+  width: 100%;
+}
+.col2 .sec3 {
+  width: 100%;
+}
+.col2 .sec3 .buton {
+  margin-left: 34%;
+  margin-top: 80%;
+  position: absolute;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.671);
+  color: white;
+  width: 10em;
+  padding: 5px;
+  border-radius: 10px;
+}
+.col2 .sec3 h1 {
+  font-size: 2em;
+}
+.col2 .sec3 h1 span {
+  opacity: 60%;
+}
+.col2 .sec3 p {
+  font-size: 15px;
+  opacity: 90%;
+}
+
+.gri {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" "a a c c";
+}
+.gri img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.gri .class-a {
+  grid-area: a;
+}
+.gri .class-b {
+  grid-area: b;
+  max-height: 20rem;
+}
+.gri .class-c {
+  grid-area: c;
+  max-height: 10rem;
+}
+
+@media (min-width: 1020px) {
+  html {
+    padding: 3em;
+  }
+  .col1 {
+    display: flex;
+  }
+  .col1 .sec1 {
+    font-size: 1em;
+  }
+  .col1 .sec2 {
+    justify-content: right;
+  }
+  .col1 .sec2 h2 {
+    padding-top: 15px;
+  }
+  .col1 .sec2 .butt {
+    margin-top: 20px;
+  }
+  .col2 {
+    display: flex;
+    margin-top: 4em;
+  }
+  .col2 .sec3 h1 {
+    font-size: 3.8em;
+  }
+  .col2 .sec3 .buton {
+    position: relative;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .col2 .gri {
+    padding-left: 4em;
+    gap: 25px;
+    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
+  }
+  .col2 .gri img {
+    border-radius: 20px;
+  }
+  .col2 .gri .class-a {
+    grid-area: a;
+  }
+  .col2 .gri .class-b {
+    grid-area: b;
+    max-height: 29rem;
+  }
+  .col2 .gri .class-c {
+    grid-area: c;
+    max-height: 28rem;
+  }
+}/*# sourceMappingURL=index.css.map */
